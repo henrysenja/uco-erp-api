@@ -44,7 +44,7 @@ async function createLocation(req, res) {
 
   async function getLocations(req,res) {
     try {
-      const locations = await Location.find();
+      const locations = await Location.find({active:true});
       res.json(locations);
     } catch (error) {
       res.status(500).json({ error: error.message });

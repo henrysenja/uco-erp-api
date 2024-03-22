@@ -45,7 +45,7 @@ async function createCompany(req, res) {
 
   async function getCompanies(req, res) {
     try {
-      const companies = await Company.find();
+      const companies = await Company.find({active:true});
       res.json(companies);
     } catch (error) {
       res.status(500).json({ error: error.message });

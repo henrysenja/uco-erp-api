@@ -44,7 +44,7 @@ async function createPerson(req, res) {
 
   async function getPersons(req, res) {
     try {
-      const persons = await Person.find();
+      const persons = await Person.find({active:true});
       res.json(persons);
     } catch (error) {
       res.status(500).json({ error: error.message });

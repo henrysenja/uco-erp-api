@@ -44,7 +44,7 @@ async function createTransport(req, res) {
   
   async function getTransports(req,res) {
     try {
-      const transports = await Transport.find();
+      const transports = await Transport.find({active:true});
       res.json(transports);
     } catch (error) {
       res.status(500).json({ error: error.message });

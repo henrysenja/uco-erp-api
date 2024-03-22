@@ -44,7 +44,7 @@ async function createTank(req, res) {
 
   async function getTanks(req,res) {
     try {
-      const tanks = await Tank.find();
+      const tanks = await Tank.find({active:true});
       res.json(tanks);
     } catch (error) {
       res.status(500).json({ error: error.message });
