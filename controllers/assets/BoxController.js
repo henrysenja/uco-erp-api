@@ -4,7 +4,7 @@ const {
   getModelById,
   updateModelById,
   deleteModelById,
-} = require('./commonCrud');
+} = require('../commonCrud');
 
 
 async function createBox(req, res) {
@@ -51,7 +51,7 @@ async function createBox(req, res) {
       res.status(500).json({ error: error.message });
     }
   }
-module.export = {
+module.exports = {
     createBox,
     getBoxById,
     updateBoxById,

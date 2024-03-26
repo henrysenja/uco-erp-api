@@ -56,6 +56,6 @@ const assetCompanySchema = new Schema({
   }
 });
 
-const AssetCompany = mongoose.model('AssetCompany', assetCompanySchema);
+const AssetCompany = mongoose.model('AssetCompany', assetCompanySchema,"asset_companies");
 
 module.exports = AssetCompany;

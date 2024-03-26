@@ -44,6 +44,6 @@ const assetLocationSchema = new Schema({
   }
 });
 
-const AssetLocation = mongoose.model('AssetLocation', assetLocationSchema);
+const AssetLocation = mongoose.model('AssetLocation', assetLocationSchema,"asset_locations");
 
 module.exports = AssetLocation;

@@ -4,7 +4,7 @@ const {
   getModelById,
   updateModelById,
   deleteModelById,
-} = require('./commonCrud');
+} = require('../commonCrud');
 
 async function createTransport(req, res) {
     try {
@@ -50,7 +50,7 @@ async function createTransport(req, res) {
       res.status(500).json({ error: error.message });
     }
   }
-module.export = {
+module.exports = {
     createTransport,
     getTransportById,
     updateTransportById,

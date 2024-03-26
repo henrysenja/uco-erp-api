@@ -4,7 +4,7 @@ const {
   getModelById,
   updateModelById,
   deleteModelById,
-} = require('./commonCrud');
+} = require('../commonCrud');
 
 async function createLocation(req, res) {
     try {
@@ -51,11 +51,11 @@ async function createLocation(req, res) {
     }
   }
 
-module.export = {
+module.exports = {
     createLocation,
     getLocationById,
     updateLocationById,
-    deleteModelById,
+    deleteLocationById,
     getLocations
 
 }  

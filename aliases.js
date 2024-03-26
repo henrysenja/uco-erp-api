@@ -10,5 +10,5 @@ aliases.addAliases({
     // '@middlewares': path.join(__dirname, 'middlewares'),
     '@controllers': path.join(__dirname, 'controllers'),
     // '@constants': path.join(__dirname, 'constants'),
-    // '@config': path.join(__dirname, 'config'),
+    '@config': path.join(__dirname, 'config'),
 });

@@ -26,6 +26,6 @@ const assetPersonSchema = new Schema({
   }
 });
 
-const AssetPerson = mongoose.model('AssetPerson', assetPersonSchema);
+const AssetPerson = mongoose.model('AssetPerson', assetPersonSchema,"asset_persons");
 
 module.exports = AssetPerson;

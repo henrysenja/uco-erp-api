@@ -28,6 +28,6 @@ const assetTransportSchema = new Schema({
   }
 });
 
-const AssetTransport = mongoose.model('AssetTransport', assetTransportSchema);
+const AssetTransport = mongoose.model('AssetTransport', assetTransportSchema,"asset_transports");
 
 module.exports = AssetTransport;

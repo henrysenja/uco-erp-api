@@ -1,10 +1,10 @@
-const Tank = require('@models/tanksModel');
+const Tank = require('@models/tankModel');
 const {
   createModel,
   getModelById,
   updateModelById,
   deleteModelById,
-} = require('./commonCrud');
+} = require('../commonCrud');
 
 async function createTank(req, res) {
     try {
@@ -50,7 +50,7 @@ async function createTank(req, res) {
       res.status(500).json({ error: error.message });
     }
   }
-module.export = {
+module.exports = {
     createTank,
     getTankById,
     updateTankById,

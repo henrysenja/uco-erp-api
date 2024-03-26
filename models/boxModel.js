@@ -23,6 +23,6 @@ const boxSchema = new Schema({
 }, { timestamps: true });
 
 // Create User model
-const Box = mongoose.model('Box', boxSchema);
+const Box = mongoose.model('Box', boxSchema,"asset_boxes");
 
 module.exports = Box;

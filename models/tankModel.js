@@ -28,6 +28,6 @@ const assetTankSchema = new Schema({
   }
 });
 
-const AssetTank = mongoose.model('AssetTank', assetTankSchema);
+const AssetTank = mongoose.model('AssetTank', assetTankSchema,"asset_tanks");
 
 module.exports = AssetTank;
